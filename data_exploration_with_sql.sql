@@ -237,7 +237,7 @@ ON mort.location_country = vac.location_country AND
 WHERE mort.continent IS NOT NULL --AND new_vaccinations IS NOT NULL
 GROUP BY mort.location_country, mort.date, new_vaccinations
 ORDER BY mort.location_country ASC, mort.date ASC
---Used limit to reduce execution time (still takes around a minute).
+--Used LIMIT to reduce execution time (still takes around a minute).
 LIMIT 1429;
 
 --Running total of vaccinations per country (using a CTE)
