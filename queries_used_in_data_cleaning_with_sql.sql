@@ -1,3 +1,10 @@
+/*
+
+Data Cleaning in SQL
+
+*/
+
+---Create a table in PostgreSQL for the CSV file.
 DROP TABLE IF EXISTS nashville_housing;
 CREATE TABLE nashville_housing(
 unique_id INT,
